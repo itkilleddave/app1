@@ -19,7 +19,7 @@ class TestController extends Controller implements Utility
         $output = $this->returnTypeDeclaration(3.567); // 3
         $output = $this->nullCoalescingOperator(['a' => 'some value']); // some value
         $output = 3 <=> 13; // -1
-        $output = FRUIT[0];
+        $output = FRUIT[0]; // apple
         $output = $this->puncuateIt("exclamation"); // exclamation!!!
         
         return view('test', ["output" => $output]);
